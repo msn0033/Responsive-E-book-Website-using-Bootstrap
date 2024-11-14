@@ -16,7 +16,7 @@
   <!-- Header -->
   <div class="Header-hero-wrapper pb-5">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md fixed-top ">
       <div class="container-fluid mx-3">
         <a class="navbar-brand" href="#">
           <img src="https://picsum.photos/200" class="img-fluid rounded shadow-lg" width="30" height="30">
@@ -196,7 +196,8 @@
                 Neque omnis </i>
             </li>
           </ul>
-          <button class="btn btn-primary btn-lg">Getyour Copy Now</button>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal1">Getyour Copy
+            Now</button>
         </div>
       </div>
       <div class="col-lg-6">
@@ -206,6 +207,71 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Model-Details -->
+  <div class="modal modal-xl fade" id="modal1" data-bs-backdrop="static">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Details</span>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="d-flex flex-column p-3">
+                <div class="d-flex flex-column align-items-center">
+                  <h2 class="p-3">Unlock Your Blogging Potential</h2>
+                  <p class="fs-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque omnis esse
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque omnis esse
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush fs-5 gap-3">
+                  <li class="list-group-item">
+                    <i class="bi bi-app-indicator fs-5"></i>
+                    <strong>Unlock Your Blogging Potential:</strong>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-app-indicator fs-4"></i>
+                    <strong>Unlock Your Blogging Potential:</strong>
+                    <i class="fs-6">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Neque omnis </i>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-app-indicator fs-4"></i>
+                    <strong>Unlock Your Blogging Potential:</strong>
+                    <i class="fs-6">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Neque omnis </i>
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal1">Getyour Copy
+                  Now</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-center">
+                <img src="https://picsum.photos/420/520" alt=""
+                  class="img-fluid rounded-start-2 shadow-lg border border-1 border-primary">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-fotter text-center">
+          <button class="btn btn-danger">Close</button>
+          <button class="btn btn-primary">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   </div>
   <!-- Statement -->
   <div class="statement container my-5">
@@ -327,7 +393,7 @@
         </div>
       </div>
       <div class="col-lg-7">
-        <div class="text-white d-flex flex-column w-75 p-5 ">
+        <div class="text-white d-flex flex-column align-items-center p-5 ">
           <h2 class="p-4">Get Your Free Ebook Now</h2>
           <p class="p-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -352,7 +418,7 @@
         <br>
         , sapiente repellendus!
       </p>
-      <div class="fs-1 d-flex justify-content-center gap-5 flex-wrap">
+      <div class="fs-1 d-flex justify-content-center gap-5">
         <i class="bi bi-facebook text-primary"></i>
         <i class="bi bi-x text-white "></i>
         <i class="bi bi-instagram text-danger "></i>
@@ -360,14 +426,14 @@
         <i class="bi bi-pinterest text-danger "></i>
       </div>
     </div>
- 
+
   </div>
   <!-- footer -->
   <div class="footer container-fluid text-bg-dark border border-top-3 border-primary p-5">
     <div class="row">
-      <dic class="col-md-8">
-        <div class="">
-          <ul class="nav  fs-4 ">
+      <dic class="col-lg-7">
+        <div class="d-flex justify-content-center gap-3">
+          <ul class="nav fs-4">
             <li class="nav-item">
               <a href="" class="nav-link text-white">Home</a>
             </li>
@@ -380,19 +446,16 @@
           </ul>
         </div>
       </dic>
-      <div class="col-md-4">
-        <div class="pt-3">
+      <div class="col-lg-5">
+        <div class="pt-2 fs-5 text-center">
           <a> copyright @ Blog Mastery 2024</a>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
